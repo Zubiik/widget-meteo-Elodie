@@ -10,10 +10,9 @@ type searchMeteoProps = {
   setCity: React.Dispatch<React.SetStateAction<string>>;
 }
 
-function SearchMeteo({setZipcode, setIcon, setTemperature, setCity }: searchMeteoProps) {
+function SearchMeteo({setIcon, setTemperature, setCity }: searchMeteoProps) {
   const [cityCopy, setCityCopy] = useState<string>('');
   const handleClick = () => {
-    console.log('seardch',cityCopy); 
     setCity(cityCopy);
     GETweatherByCity(setIcon, setTemperature, cityCopy);
     setCityCopy('');
@@ -21,7 +20,6 @@ function SearchMeteo({setZipcode, setIcon, setTemperature, setCity }: searchMete
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
       setCityCopy(event.target.value);
-      
     }
 
 

@@ -8,14 +8,12 @@ export const GETweatherByCity = async (setIcon :React.Dispatch<React.SetStateAct
    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityCopy}&appid=${API_KEY}&units=metric&lang={FR}`)
       .then((response) => {
          countryName = response.data.sys.country;
-         console.log(response.data.sys.country);
       })
       .catch(function (error) {
           console.log(error);
       });
    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityCopy},${countryName}&appid=${API_KEY}&units=metric&lang={FR}`)
       .then((response) => {
-         console.log(response.data);
           setTemperature(Math.round(response.data.main.temp));
           setIcon(response.data.weather[0].icon);
       })
