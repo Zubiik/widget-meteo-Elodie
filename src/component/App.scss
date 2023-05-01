@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container {
+  border: 0.2px solid white;
+  background: linear-gradient(#e8eef01d, #e4e6ef46,#e8eef01b );
+  border-radius: 10px;
+  padding: 100px;
+  min-width: 300px;
+  min-height: 300px;
+  &-sun{
+    height: 200px;
+    position:absolute;
+    top:-90px;
+    right:-100px;
+  }
+
+}
