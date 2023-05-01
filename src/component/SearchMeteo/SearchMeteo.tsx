@@ -15,7 +15,7 @@ function SearchMeteo({setZipcode, setIcon, setTemperature, setCity }: searchMete
   const handleClick = () => {
     console.log('seardch',cityCopy); 
     setCity(cityCopy);
-    GETweatherByCity(setIcon, setTemperature, cityCopy, setCity,setZipcode);
+    GETweatherByCity(setIcon, setTemperature, cityCopy);
     setCityCopy('');
   }
 
