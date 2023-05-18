@@ -1,21 +1,24 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 .container {
   border: 0.2px solid white;
   border-radius: 10px;
-  padding: 100px;
+  padding: 50px;
+  height: 40vh;
+  @media (max-width: 600px) {
+      height: 50vh;
+      }
   background: linear-gradient(320deg, lightskyblue, rgb(97, 172, 218), rgb(9, 45, 143));
   &-sun{
     height: 200px;
     position:absolute;
     top:-90px;
     right:-100px;
-  }
-    @media (max-width: 600px) {
+    @media  (max-width: 600px) {
+      visibility: hidden;
+    }
 
   }
 
