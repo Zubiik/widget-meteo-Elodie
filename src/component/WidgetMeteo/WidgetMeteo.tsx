@@ -17,7 +17,7 @@ function WidgetMeteo({ city, zipcode,temperature,icon }: WidgetMeteoProps) {
         <div className="meteo-temperature">{temperature}°C</div>
       </div>
       <div>
-        <img src={`https://openweathermap.org/img/wn/${icon}.png`} />
+        <img className='meteo-sun' src={`https://openweathermap.org/img/wn/${icon}.png`} />
       </div>
     </div>
   )

@@ -6,16 +6,17 @@
 }
 .container {
   border: 0.2px solid white;
-  background: linear-gradient(#e8eef01d, #e4e6ef46,#e8eef01b );
   border-radius: 10px;
   padding: 100px;
-  min-width: 300px;
-  min-height: 300px;
+  background: linear-gradient(320deg, lightskyblue, rgb(97, 172, 218), rgb(9, 45, 143));
   &-sun{
     height: 200px;
     position:absolute;
     top:-90px;
     right:-100px;
+  }
+    @media (max-width: 600px) {
+
   }
 
 }
